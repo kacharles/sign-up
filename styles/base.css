@@ -1,0 +1,104 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header, main, footer { 
+    padding: 1rem; 
+}
+header, footer { 
+    background-color: #ffc328;
+    color: #414142;
+}
+main { 
+    font-size: 16px;
+}
+main #sign-up { 
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5px;
+}
+
+main section { 
+    border: 2px solid #414142;
+    /* max-width: 30%; */
+    /* padding: 1rem; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+section form { 
+    width: 100%;
+}
+
+section h2 {
+    background-color: #ffc328;
+    padding: 1rem;
+    color: #414142;
+
+}
+section a { 
+    text-decoration: underline;
+    color: #414142;
+    cursor: auto;
+}
+section p a { 
+    cursor: pointer;
+}
+section label { 
+    display: block;
+    margin: 1rem 0;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #636466;
+    margin: 1rem;
+    
+}
+section input { 
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    /* margin: 0.5rem; */
+}
+
+section button { 
+    padding: .75rem;
+    /* margin: 0 auto; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    width: 94%;
+    background-color: #ffc328;
+    color: #414142;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+section p { 
+    /* padding: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;;
+    margin: 0.5rem 0;
+    line-height: 20px;
+    font-size: 18px; 
+    color: #636466;
+}
+
+footer p { 
+    font-size: 18px;
+    color: #414142;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) { 
+    main #sign-up { 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main section { 
+        margin: 1rem 0;
+    }
+}
