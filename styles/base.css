@@ -77,6 +77,10 @@ section button {
     font-size: 18px;
     margin-bottom: 0.5rem;
 }
+
+section button:hover {
+    cursor: pointer;
+}
 section p { 
     /* padding: 1rem; */
     padding-left: 1rem;
@@ -86,6 +90,7 @@ section p {
     font-size: 18px; 
     color: #636466;
 }
+
 
 footer p { 
     font-size: 18px;

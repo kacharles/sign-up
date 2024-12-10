@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="script/index.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -35,24 +36,27 @@
                 </p>
                 <p>
                     To learn more and apply visit <a href="https://byupathway.edu">byupathway.edu</a> or enter the form and let's ease the application process for you.
-                    For additional information, you can write to me at <a href="ckoenig@byupathway.edu">✉ ckoenig@byupathway.edu</a>. You can ask chat with me on WhatsApp: <a href="https://wa.me/231770726935">Charles</a>
+                    For additional information, you can write to me at <a href="#">✉ ckoenig@byupathway.edu</a>. You can ask chat with me on WhatsApp: <a href="https://wa.me/231770726935">Charles</a>
                 </p>
             </section>
             <section id="form">
                 <h2>Sign Up</h2>
-                <form action="" method="POST">
-                 <label>First Name<input type="text" id="fname" name="First Name"></label>
-                 <label>Last Name<input type="text" id="lname" name="Last Name"></label>
-                 <label>Phone<input type="tel" id="phone" name="Phone"></label>
-                 <label for="">Email<input type="email" id="email" name="Email"></label>
-                 <input type="hidden" id="hidden" name="hidden" hidden>
-                 <button type="submit">Sign Up</button>
+                <form id="data"  method="POST">
+                 <label for="Name">First Name<input type="text" id="Nname" name="Name" placeholder="Your First Name"></label>
+                 <label for="Last Name">Last Name<input type="text" id="Last Name" name="Last Name" placeholder="Your Last Name"></label>
+                 <label for="Recipient">Email<input type="email" id="Recipient" name="Recipient" placeholder="Please provide a valid email address."></label>
+                 <label for="Phone">Phone#<input type="tel" id="Phone" name="Phone" placeholder="Please provide your phone or whatsapp number."></label>
+                 <!-- <label for="WhatsApp">WhatsApp#<input type="tel" id="WhatsApp" name="WhatsApp"></label> -->
+                 <input type="hidden" id="TimeStamp" name="TimeStamp" hidden>
+                 <input type="hidden" id="stamp" hidden>
+                 <button type="submit" id="submit">Sign Up</button>
+                 <div id="message"></div>
                 </form>
             </section>
         </div>
     </main>
     <footer>
-        <p>Sign up and register for the upcoming term.</p>
+        <p>⚠ Registration deadline for the upcoming term is 20 December. Sign up and let's help you register for free for the upcoming term.</p>
     </footer>
 </header>
 </body>
