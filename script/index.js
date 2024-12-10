@@ -53,7 +53,7 @@ dateTime.value = new Date();
             // Display a success message
             // document.getElementById("message").textContent =
             //   "Data submitted successfully!";
-            alert("Thank you for your interesting in BYU-Pathway Worldwide. We will review your submission and get back to you soon with in 24-hours.");
+            alert("Thank you for your interest in BYU-Pathway Worldwide. We will review your submission and get back to you soon with in 24-hours.");
             document.getElementById("message").style.display = "block";
             document.getElementById("message").style.backgroundColor = "green";
             document.getElementById("message").style.color = "beige";
