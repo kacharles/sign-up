@@ -53,9 +53,9 @@ dateTime.value = new Date();
             // Display a success message
             // document.getElementById("message").textContent =
             //   "Data submitted successfully!";
-            alert("Thank you for your interest in BYU-Pathway Worldwide. We will review your submission and get back to you soon with in 24-hours.");
+            alert("Thank you for your interest in BYU-Pathway Worldwide. We have received your request and will get back to you soon with in 24-hours.Please do not send another request. We will get back to you soon. Thank you 🙏.");
             document.getElementById("message").style.display = "block";
-            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.backgroundColor = "green"; 
             document.getElementById("message").style.color = "beige";
             document.getElementById("submit").disabled = false;
             document.querySelector("#submit").textContent = "Sign up";
