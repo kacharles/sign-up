@@ -6,14 +6,37 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/app-guide.css">
     <script src="script/index.js" defer></script>
+    <script src="script/toggle-menu.js" defer></script>
     <title>Application Guide</title>
 </head>
 <body>
-    <header><nav>
-        <h1>BYU-Pathway Worldwide Application Guide</h1>
-    </nav>
-    </header>
-
+    <div id="header-container">
+        <header>
+          <div class="brand-name">
+            <span>BYU-PW Application Guide</span>
+          </div>
+          <div class="menu">
+            <button id="toggle-btn"></button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="application.html">Application</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="sign-up.html">Sign-up</a></li>
+                    <li><a href="cert-degre.html">Certificates & Degrees</a></li>
+                </ul>
+            </nav>
+          </div>
+        </header>
+        <ul class="mobile-menu">
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="application.html">Application</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="sign-up.html">Sign-up</a></li>
+            <li><a href="cert-degre.html">Degrees & Certificates</a></li>
+        </ul>
+    </div> 
+    
     <main>
         <section>
             <h3 style="font-size: 18px;">1. To apply to BYU-Pathway Worldwide, you first need to create a path account. 
@@ -171,9 +194,12 @@
         
         
     </main>
-    <footer>
-        <p>⚠ Application deadline for the upcoming term is 03 March. Please Sign up and let's help you register for free for the next term.</p>
-    </footer>
+
+    <div id="footer-container">
+            <footer>
+                <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p>
+            </footer>
+    </div> 
 </header>
 </body>
 </html>

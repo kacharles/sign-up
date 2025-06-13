@@ -24,7 +24,6 @@ header {
     grid-template-columns: auto auto;
     align-content: center;
     align-items: center;
-    align-self: center;
     
 }
 .brand-name span { 
@@ -59,7 +58,7 @@ header {
 /* Styling the mobile menu */
 .mobile-menu { 
     list-style-type: none;
-    /* padding: 1rem;  */
+    padding: 1rem; 
     background-color: #ffc328;
 }
 .mobile-menu li { 
@@ -116,7 +115,7 @@ button:hover {
 }
 main #sign-up { 
     display: grid; 
-    grid-template-columns: auto;
+    grid-template-columns: auto 1fr;
     column-gap: 5px;
 }
 

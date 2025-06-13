@@ -1,0 +1,41 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+main h1 { 
+    color: #414141;
+}
+.cer-sect { 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cer-sect #cert-one {
+    display: block;
+    padding: 0.30rem;
+    background-color: lightcyan;
+    color: black;
+    text-align: center;
+    margin-bottom: 0.30rem;
+}
+.cer-sect h3 { 
+      display: block;
+    padding: 0.30rem;
+    background-color: #ffc328;
+    color: black;
+    text-align: center;
+}
+.coures {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.coures span { 
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 0.25rem;
+}
+/* .main-sec { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.25rem;
+} */

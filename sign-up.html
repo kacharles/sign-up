@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/sign-up.css">
     <script src="script/index.js" defer></script>
     <script src="script/toggle-menu.js" defer></script>
     <title>Sign Up</title>
@@ -37,11 +37,22 @@
     </div> 
     
     <main>
-        <h1>Do you need help applying to BYU-Pathway Worldwide?</h1>
-        <form action="application-guide.html">
-            <button>Learn More</button>
-        </form>
+        <h1>Sign-up and let's help you apply for free.</h1>
         <div id="sign-up">
+            <section id="form">
+                <a href="#"><h2>Sign Up</h2></a> 
+                <form id="data"  method="POST">
+                 <label for="Name">First Name<input type="text" id="Nname" name="Name" placeholder="Your First Name" required></label>
+                 <label for="Last Name">Last Name<input type="text" id="Last Name" name="Last Name" placeholder="Your Last Name" required></label>
+                 <label for="Recipient">Email<input type="email" id="Recipient" name="Recipient" placeholder="Please provide a valid email address." required></label>
+                 <label for="Phone">Phone#<input type="tel" id="Phone" name="Phone" placeholder="Please provide your phone or whatsapp number."></label>
+                 <label for="WhatsApp">WhatsApp#<input type="tel" id="WhatsApp" name="WhatsApp"></label>
+                 <input type="hidden" id="TimeStamp" name="TimeStamp" hidden>
+                 <input type="hidden" id="stamp" hidden>
+                 <button type="submit" id="submit">Sign Up</button>
+                 <div id="message"></div>
+                </form>
+            </section>
             <section id="about">
                 <a href="#"><h2>BYU-Pathway Overview</h2></a> <span style="color: blue"></span>
                 <p>
@@ -62,25 +73,12 @@
                     your degree!
                 </p>
                 <p>
-                    To learn more and apply visit <a href="https://byupathway.edu">byupathway.edu</a> or click <a href="sign-up.html">here</a> and let's ease the application process for you.
+                    To learn more and apply visit <a href="https://byupathway.edu">byupathway.edu</a> or enter the form and let's ease the application process for you.
                     For additional information, you can write to me at <a href="#">✉ckoenig@byupathway.edu</a>. We can also chat on whatsApp. Click <a href="https://wa.me/231770726935">here</a>
                      to send me a message on whatsApp. 
                 </p>
             </section>
-            <!-- <section id="form">
-                <a href="#"><h2>Sign Up</h2></a> 
-                <form id="data"  method="POST">
-                 <label for="Name">First Name<input type="text" id="Nname" name="Name" placeholder="Your First Name" required></label>
-                 <label for="Last Name">Last Name<input type="text" id="Last Name" name="Last Name" placeholder="Your Last Name" required></label>
-                 <label for="Recipient">Email<input type="email" id="Recipient" name="Recipient" placeholder="Please provide a valid email address." required></label>
-                 <label for="Phone">Phone#<input type="tel" id="Phone" name="Phone" placeholder="Please provide your phone or whatsapp number."></label>
-                 <!-- <label for="WhatsApp">WhatsApp#<input type="tel" id="WhatsApp" name="WhatsApp"></label> -->
-                 <!-- <input type="hidden" id="TimeStamp" name="TimeStamp" hidden>
-                 <input type="hidden" id="stamp" hidden>
-                 <button type="submit" id="submit">Sign Up</button>
-                 <div id="message"></div>
-                </form>
-            </section> -->
+            
         </div>
     </main>
 
