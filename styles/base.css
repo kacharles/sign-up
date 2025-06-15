@@ -37,12 +37,24 @@ header {
 #toggle-btn::before { 
     content: "\2630";
 }
+
+
 #toggle-btn { 
     font-size: 25px;
     border: none;
     background-color: transparent;
     display: flex;
     justify-self: right;
+    /* justify-self: center; */
+    /* margin-bottom: 0.5rem; */
+    font-weight: 700;
+    border: none;
+    background-color: #414142;
+    color:#ffc328;
+    padding: 0.50rem;
+    border-radius: 5px;
+    /* padding: 0.25rem; */
+
 }
 #toggle-btn:hover { 
     cursor: pointer;
@@ -80,7 +92,7 @@ header #toggle-btn.activate::before {
 
 .mobile-menu li a { 
     display: block;
-    padding: 0.5rem;
+    padding: 1rem;
     text-decoration: none;
     font-size: 20px;
     font-weight: 1000;
@@ -101,7 +113,7 @@ h1 {
     color: #414142;
     margin-bottom: 0.5rem;
 }
-button { 
+#btn { 
     background-color: #ffc328;
     color:#636466;
     padding: 0.5rem;
@@ -116,7 +128,7 @@ button:hover {
 }
 main #sign-up { 
     display: grid; 
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     column-gap: 5px;
 }
 
