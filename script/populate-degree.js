@@ -7,7 +7,25 @@ const all = document.querySelector("#all");
 const byui = document.querySelector("#byui"); 
 const ensign = document.querySelector("#ensign");
 
-function populateHtml() { 
+
+const url = "https://kacharles.github.io/sign-up/data/cert-degree.json"; 
+
+export async function getData(url) {
+    try {
+        const response = await fetch(url); 
+        const degrees = await response.json(); 
+        populateHtml(degrees);
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+getData(url);
+
+
+
+
+function populateHtml(degrees) { 
       degrees.forEach(degree => {
           // create a list of parent elements to be used. 
           const degre = document.createElement("div");
@@ -130,7 +148,9 @@ function populateHtml() {
       })
 }
 
-populateHtml();
+// const degrees = getData.degrees;
+
+// populateHtml();
 
 byui.addEventListener("click", () => {
   const mainElement = document.querySelector("main");
