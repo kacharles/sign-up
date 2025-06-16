@@ -1,7 +1,7 @@
 export const degrees = [
   //Software Engineering
     {
-        title: 'Software Engineering',
+        title: 'Software Development',
         degreeType: 'BYU-I',
         certificate: [
             {
@@ -772,7 +772,7 @@ export const degrees = [
 
               {
              certName: 'Web Development',
-              certType: '🥈 Certificate 3',
+              certType: '🥉 Certificate 3',
               codeH: 'Code',
               nameH: 'Name',
               creditH: 'Credits',

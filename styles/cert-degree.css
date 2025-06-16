@@ -2,6 +2,36 @@
     margin: 0;
     padding: 0;
 }
+
+.filter { 
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0.5rem;
+
+}
+.filter button { 
+    padding: 0.5rem; 
+    flex:0 10%;
+    border-radius: 5px;
+    border: none;
+
+}
+.filter #byui { 
+    background-color: #006eb6;
+    color: white;
+    font-weight: 500;
+}
+.filter #ensign {
+    background-color: #006248;
+    color: white;
+    font-weight: 500;
+}
+.filter #all { 
+    background-color: grey;
+    color: black;
+    font-weight: 500;
+}
 main h1 { 
     color: #414141;
 }
@@ -89,4 +119,11 @@ main h1 {
     main h2 { 
         font-size: 18px;
     }
+    .filter button { 
+    padding: 0.5rem; 
+    flex:0 20%;
+    border-radius: 5px;
+    border: none;
+
+}
 }

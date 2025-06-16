@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Application Guide index page. This is the first page to display when the site is loaded.">
+    
     <link rel="stylesheet" href="styles/base.css">
+    
     <script src="script/index.js" defer></script>
     <script src="script/toggle-menu.js" defer></script>
-    <title>Sign Up</title>
+    <script src="script/footer-info.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Play:wght@400;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    
+    <title>Application Guide - Need help applying to BYU-Pathway Worldwide?</title>
 </head>
 <body>
     <div id="header-container">
         <header>
           <div class="brand-name">
-            <span>BYU-PW Application Guide</span>
+            <span>Application Guide</span>
           </div>
           <div class="menu">
             <button id="toggle-btn"></button>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="overview.html">Overview</a></li>
-                    <li><a href="cert-degre.html">Application</a></li>
+                    <li><a href="application.html">Application</a></li>
                     <li><a href="registration.html">Registration</a></li>
                     <li><a href="sign-up.html">Sign-up</a></li>
-                    <li><a href="cert-degre.html">Degrees & Certificates</a></li>
+                    <li><a href="cert-degre.html">Certificates & Degrees</a></li>
                 </ul>
             </nav>
           </div>
@@ -32,15 +42,27 @@
             <li><a href="application.html">Application</a></li>
             <li><a href="cert-degre.html">Registration</a></li>
             <li><a href="sign-up.html">Sign-up</a></li>
-            <li><a href="cert-degre.html">Degrees & Certificates</a></li>
+            <li><a href="cert-degre.html">Certificates & Degrees</a></li>
         </ul>
     </div> 
     
     <main>
-        <h1>Do you need help applying to BYU-Pathway Worldwide?</h1>
-        <form action="application-guide.html">
-            <button id="btn">Learn More</button>
+        <h1>Need help applying to BYU-Pathway Worldwide?</h1>
+        <form action="application.html">
+        <div id="btn-div">
+            <form action="application.html">
+            <button id="apply-btn">Apply Now</button>
+            </form>
+            <button id="learn-btn">Learn More</button>
+        </div>
         </form>
+        <dialog id="modal">
+            <div>
+                <h2>More About BYU-Pathay</h2>
+                <button id="close-btn">X</button>
+            </div>
+            <p>Visit <a href="https://byupathway.edu" target="_blank">https://byupathway.edu</a> learn more about BYU-Pathway Worldwide</p>
+        </dialog>
         <div id="sign-up">
             <section id="about">
                 <a href="#"><h2>BYU-Pathway Overview</h2></a> <span style="color: blue"></span>
@@ -86,7 +108,9 @@
 
     <div id="footer-container">
             <footer>
-                <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p>
+                <!-- <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p> -->
+                 <p id="copy-right"></p>
+                 <p id="lmf"></p>
             </footer>
     </div> 
 </header>

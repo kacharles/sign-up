@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/base.css">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Certificates & Degrees. This page list all certificates and degrees offered through BYU-Pathway.">
     <link rel="stylesheet" href="styles/cert-degree.css">
+
+    <link rel="stylesheet" href="styles/base.css">
     <!-- <script src="script/index.js" defer></script> -->
     <script src="script/toggle-menu.js" defer></script>
     <!-- <script src="script/cert-degree.js" defer></script> -->
     <script type="module" src="script/populate-degree.js"></script>
-    <title>Sign Up</title>
+    <script src="script/footer-info.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Play:wght@400;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <title>Certificates & Degrees</title>
 </head>
 <body>
     <div id="header-container">
         <header>
           <div class="brand-name">
-            <span>BYU-PW Application Guide</span>
+            <span>Application Guide</span>
           </div>
           <div class="menu">
             <button id="toggle-btn"></button>
@@ -24,8 +32,8 @@
                     <li><a href="overview.html">Overview</a></li>
                     <li><a href="application.html">Application</a></li>
                     <li><a href="registration.html">Registration</a></li>
-                    <li><a href="script/">Sign-up</a></li>
-                    <li><a href="cert-degre.html">Degrees & Certificates</a></li>
+                    <li><a href="sign-up.html">Sign-up</a></li>
+                    <li><a class="active" href="cert-degre.html">Certificates & Degrees</a></li>
                 </ul>
             </nav>
           </div>
@@ -35,41 +43,21 @@
             <li><a href="application.html">Application</a></li>
             <li><a href="registration.html">Registration</a></li>
             <li><a href="sign-up.html">Sign-up</a></li>
-            <li><a href="cert-degre.html">Degrees & Certificates</a></li>
+            <li><a class="active" href="cert-degre.html">Certificates & Degrees</a></li>
         </ul>
     </div> 
-    
+    <div class="filter">
+        <button id="all">All</button><button id="byui">BYU-I</button><button id="ensign"">Ensign</button>
+    </div>
     <main>
         <h1>Certificates & Degrees</h1>
-        <!-- <div id="degree">
-        <div id="degree-sec">
-            <h2 class="title">Bachelor's of Science in Software Engineering</h2>
-        <div class="main-sec">
-            <div class="cer-sect">
-                <span class="cert-one">Certificate One</span>
-                <h3>Web and Computer Programming</h3>
-            <div class="coures">
-                <span id="code">WDD 130</span><span id="name">Web & Computer Programming</span><span id="credits">2</span>
-            </div>
-        </div> -->
-        <!-- <div class="cer-sect">
-                <span class="cert-two">Certificate One</span>
-                <h3>Web and Computer Programming</h3>
-        <div class="coures">
-                <span id="code">WDD 130</span><span id="name">Web & Computer Programming</span><span id="credits">2</span>
-        </div>
-        </div>
-        <div class="cer-sect">
-                <span class="cert-three">Certificate One</span>
-                <h3>Web and Computer Programming</h3>
-        <div class="coures">
-                <span id="code">WDD 130</span><span id="name">Web & Computer Programming</span><span id="credits">2</span>
-        </div> -->
     </main>
 
     <div id="footer-container">
-            <footer>
-                <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p>
+          <footer>
+                <!-- <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p> -->
+                 <p id="copy-right"></p>
+                 <p id="lmf"></p>
             </footer>
     </div> 
 </header>

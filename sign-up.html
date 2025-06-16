@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Charles Alfred Koenig">
+    <meta name="description" content="Sign Up. This makes use of a form to help people sign up to get help applying to BYU-Pathway.">
+    
+    <link rel="stylesheet" href="styles/app-guide.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/sign-up.css">
+    <!-- <link rel="stylesheet" href="styles/large.css"> -->
     <script src="script/index.js" defer></script>
     <script src="script/toggle-menu.js" defer></script>
+    <script src="script/footer-info.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Play:wght@400;700&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <title>Sign Up</title>
 </head>
 <body>
     <div id="header-container">
         <header>
           <div class="brand-name">
-            <span>BYU-PW Application Guide</span>
+            <span>Application Guide</span>
           </div>
           <div class="menu">
             <button id="toggle-btn"></button>
@@ -21,8 +32,8 @@
                     <li><a href="overview.html">Overview</a></li>
                     <li><a href="application.html">Application</a></li>
                     <li><a href="registration.html">Registration</a></li>
-                    <li><a href="sign-up.html">Sign-up</a></li>
-                    <li><a href="cert-degre.html">Degrees & Certificates</a></li>
+                    <li><a class="active" href="sign-up.html">Sign-up</a></li>
+                    <li><a href="cert-degre.html">Certificates & Degrees</a></li>
                 </ul>
             </nav>
           </div>
@@ -31,8 +42,8 @@
             <li><a href="overview.html">Overview</a></li>
             <li><a href="application.html">Application</a></li>
             <li><a href="registration.html">Registration</a></li>
-            <li><a href="sign-up.html">Sign-up</a></li>
-            <li><a href="cert-degre.html">Degrees & Certificates</a></li>
+            <li><a class="active" href="sign-up.html">Sign-up</a></li>
+            <li><a href="cert-degre.html">Certificates & Degrees</a></li>
         </ul>
     </div> 
     
@@ -54,7 +65,7 @@
                 </form>
             </section>
             <section id="about">
-                <a href="#"><h2>BYU-Pathway Overview</h2></a> <span style="color: blue"></span>
+                <a href="#"><h2>BYU-Pathway Worldwide Overview</h2></a>
                 <p>
                     Have you thought about getting certificates that will prepare you to get a job and make more money on your way to a degree? BYU-Pathway Worldwide helps you do just that. 
                     BYU-Pathway Worldwide in association with BYU-Idaho and Ensign College is the preferred pathway to a university degree. It offers access to online certificates and degrees 
@@ -84,7 +95,9 @@
 
     <div id="footer-container">
             <footer>
-                <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p>
+                <!-- <p>⚠ Application deadline for the upcoming term is 03 March. Please sign up and let's help you apply and register for free for the next term.</p> -->
+                 <p id="copy-right"></p>
+                 <p id="lmf"></p>
             </footer>
     </div> 
 </header>
