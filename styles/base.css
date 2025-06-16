@@ -240,6 +240,35 @@ footer {
     main section { 
         margin: 1rem 0;
     }
+
+    footer p { 
+        text-align: center;
+    }
+}
+
+#modal { 
+    padding: 0.75rem;
+    margin: 0 auto;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 25%;
+    border-radius: 10px;
+    background-color: cyan;
+}
+#modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+#modal div {
+    display: grid;
+    grid-template-columns: auto 44px;
+}
+#modal p { 
+    font-size: 20px;
+}
+#modal button { 
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
 }
 @media screen and (min-width: 767px){
     #toggle-btn {
